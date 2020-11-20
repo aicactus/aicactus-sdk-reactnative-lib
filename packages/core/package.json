@@ -1,6 +1,6 @@
 {
   "name": "@tvpsoft/aicactus-sdk-react-native",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "The SDK AIcactus for React-Native app.",
   "license": "MIT",
   "main": "build/cjs/index.js",
