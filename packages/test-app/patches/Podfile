@@ -7,7 +7,7 @@ target 'TestApp' do
 
   # Pods for TestApp
   pod 'AicactusSDK', '1.0.3'
-  pod 'RNAicactus', :path => "../node_modules/@aicactus/aicactus-react-native"
+  pod 'RNAicactus', :path => "../node_modules/@tvpsoft/aicactus-react-native"
 
   # Your 'node_modules' directory is probably in the root of your project,
   # but if not, adjust the `:path` accordingly

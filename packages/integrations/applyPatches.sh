@@ -22,6 +22,6 @@
 # another integration. Because of this, we copy in a version with the appropriate code
 # applied to the Android file, IntegrationModule.kt
 
-# cp "./patches/@aicactus/aicactus-react-native-adjust/android/src/main/java/io/aicactus/sdk/reactnative/integration/adjust/IntegrationModule.kt" "./build/@aicactus/aicactus-react-native-adjust/android/src/main/java/io/aicactus/sdk/reactnative/integration/adjust/IntegrationModule.kt"
+# cp "./patches/@tvpsoft/aicactus-react-native-adjust/android/src/main/java/io/aicactus/sdk/reactnative/integration/adjust/IntegrationModule.kt" "./build/@tvpsoft/aicactus-react-native-adjust/android/src/main/java/io/aicactus/sdk/reactnative/integration/adjust/IntegrationModule.kt"
 
 

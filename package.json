@@ -13,7 +13,7 @@
     ]
   },
   "scripts": {
-    "core": "yarn workspace @aicactus/aicactus-sdk-react-native",
+    "core": "yarn workspace @tvpsoft/aicactus-sdk-react-native",
     "integrations": "yarn workspace @local/integrations",
     "test-app": "yarn workspace @local/test-app",
     "build:core": "yarn core build",

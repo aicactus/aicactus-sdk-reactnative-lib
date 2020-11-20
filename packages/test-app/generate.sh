@@ -15,7 +15,7 @@ sed -i -e "s/CIRCLE_WORKFLOW_ID/$CIRCLE_WORKFLOW_ID/g" App.tsx
 build_dir=$pwd/../integrations/build
 counter=0
 
-for integration in `cd $build_dir && echo @aicactus/*`; do
+for integration in `cd $build_dir && echo @tvpsoft/*`; do
     counter=$((counter+1))
     install_command+=" file:$build_dir/$integration"
     echo "import integration_$counter from '$integration'" >> integrations.gen.ts

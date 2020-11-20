@@ -57,7 +57,7 @@ export default integrations
 			ios,
 			android,
 			npm: {
-				package: `@aicactus/aicactus-react-native-${slug(
+				package: `@tvpsoft/aicactus-react-native-${slug(
 					'-'
 				).toLowerCase()}${suffix}`
 			}

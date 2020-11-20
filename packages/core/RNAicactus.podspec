@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   s.homepage            = 'http://aicactus.io/'
   s.social_media_url    = 'https://twitter.com/aicactus'
   s.license             = { :type => 'MIT' }
-  s.author              = { 'Aicactus' => 'contact@aicactus.io' }
+  s.author              = { 'Aicactus' => 'contact@tvpsoft.io' }
   s.source              = { :git => 'https://github.com/aicactus/aicactus-sdk-reactnative-lib.git', :tag => s.version.to_s }
 
   s.platform            = :ios, '11.0'

@@ -1,6 +1,5 @@
 - name: Mixpanel
 - name: Google Analytics
-# - name: Adjust
 - name: Amplitude
 - name: Countly
 - name: Flurry

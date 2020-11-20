@@ -1,4 +1,4 @@
-import { AicactusSDK } from '@aicactus/aicactus-sdk-react-native'
+import { AicactusSDK } from '@tvpsoft/aicactus-sdk-react-native'
 
 const integrations: AicactusSDK.Integration[] = []
 

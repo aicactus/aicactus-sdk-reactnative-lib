@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { StyleSheet, Text, View, Image, TouchableOpacity } from 'react-native'
-import AicactusSDK from '@aicactus/aicactus-sdk-react-native'
+import AicactusSDK from '@tvpsoft/aicactus-sdk-react-native'
 
 type Call = ['identify' | 'track', string, {}]
 

@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
    
   s.homepage            = "http://aicactus.io/"
   s.license             =  { :type => 'MIT' }
-  s.author              = { "aicactus" => "friends@aicactus.io" }
+  s.author              = { "aicactus" => "friends@tvpsoft.io" }
   s.source              = { :git => "https://github.com/aicactus/aicactus-sdk-reactnative-lib.git", :tag => s.version.to_s }
   s.social_media_url    = 'https://twitter.com/aicactus'
 
