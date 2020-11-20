@@ -1,6 +1,6 @@
 import mockConsole, { RestoreConsole } from 'jest-mock-console'
 
-import { Analytics } from '../aicactussdk'
+import { AicactusSDK } from '../aicactussdk'
 import Bridge from '../bridge'
 
 jest.mock('../bridge')
@@ -9,19 +9,19 @@ const nextTick = () => new Promise(resolve => setImmediate(resolve))
 const getBridgeStub = <K extends keyof typeof Bridge>(
 	name: K
 ): jest.Mock<(typeof Bridge)[K]> => (Bridge as any)[name]
-let analytics: Analytics.Client = null!
+let analytics: AicactusSDK.Client = null!
 let restoreConsole: RestoreConsole = null!
 
 const ctx = {
 	library: {
-		name: 'analytics-react-native',
+		name: 'aicactus-reactnative',
 		version: require('../../package.json').version
 	}
 }
 
 beforeEach(async () => {
 	restoreConsole = mockConsole()
-	analytics = new Analytics.Client()
+	analytics = new AicactusSDK.Client()
 	Object.keys(Bridge).forEach(key => getBridgeStub(key as any).mockClear())
 
 	await analytics.setup('write key')
@@ -49,7 +49,7 @@ it('catches bridge errors', async () => {
 })
 
 it('waits for .setup()', async () => {
-	const client = new Analytics.Client()
+	const client = new AicactusSDK.Client()
 
 	client.track('test 1')
 	client.track('test 2')

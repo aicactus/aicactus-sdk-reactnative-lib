@@ -1,6 +1,6 @@
-import { Analytics } from '@aicactus/analytics-react-native'
+import { AicactusSDK } from '@aicactus/aicactus-sdk-react-native'
 
-const integrations: Analytics.Integration[] = []
+const integrations: AicactusSDK.Integration[] = []
 
 export default integrations
 

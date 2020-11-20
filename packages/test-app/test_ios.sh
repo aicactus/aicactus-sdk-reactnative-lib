@@ -11,8 +11,8 @@ pushd project/ios
         pod install --repo-update
         cfg="cocoapods"
     else
-        echo "import {Analytics} from '@aicactus/analytics-react-native'" > ../integrations.gen.ts
-        echo "export default [] as Analytics.Integration[]" >> ../integrations.gen.ts
+        echo "import {AicactusSDK} from '@aicactus/aicactus-react-native'" > ../integrations.gen.ts
+        echo "export default [] as AicactusSDK.Integration[]" >> ../integrations.gen.ts
         rm -rf TestApp.xcodeproj
         cp -r ../../patches/TestApp.xcodeproj .
         yarn remove $(cd ../../../integrations/build && echo @aicactus/*)

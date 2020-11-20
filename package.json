@@ -28,11 +28,7 @@
     "deploy": "run-s 'core deploy' 'integrations deploy'",
     "docs:core": "yarn core docs",
     "docs": "run-s docs:*",
-    "cz": "git-cz",
-    "precommit": "lint-staged",
-    "commitmsg": "commitlint -E GIT_PARAMS",
-    "lint-staged:ts": "run-p docs:core && git add packages/core/docs",
-    "lint-staged:integrations": "yarn integrations generate:readme && git add README.md"
+    "cz": "git-cz"
   },
   "commitlint": {
     "extends": [

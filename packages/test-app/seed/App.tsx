@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { StyleSheet, Text, View, Image, TouchableOpacity } from 'react-native'
-import analytics from '@aicactus/analytics-react-native'
+import AicactusSDK from '@aicactus/aicactus-sdk-react-native'
 
 type Call = ['identify' | 'track', string, {}]
 
@@ -12,36 +12,36 @@ const Button = ({ title, onPress }: { title: string; onPress: () => void }) => (
   </TouchableOpacity>
 )
 
-const screenHome = () => analytics.screen('Home')
+const screenHome = () => AicactusSDK.screen('Home')
 
-const flush = () => analytics.flush()
+const flush = () => AicactusSDK.flush()
 
-const pizzaEaten = () => analytics.track('Pizza Eaten')
+const pizzaEaten = () => AicactusSDK.track('Pizza Eaten')
 
 const trackOrder = () => {
-  analytics.track('Order Completed')
-  analytics.track('Order Cancelled', {
+  AicactusSDK.track('Order Completed')
+  AicactusSDK.track('Order Cancelled', {
     order_id: 323
   })
-  analytics.identify('userIdOnly')
-  analytics.identify('userId', {
+  AicactusSDK.identify('userIdOnly')
+  AicactusSDK.identify('userId', {
     age: 32
   })
-  analytics.alias('newlyAliasedId')
-  analytics.screen('User Login Screen', {
+  AicactusSDK.alias('newlyAliasedId')
+  AicactusSDK.screen('User Login Screen', {
     method: 'google'
   })
 }
 
 const logAnonymousId = async () => {
-  console.log('anonymousId: %s', await analytics.getAnonymousId())
+  console.log('anonymousId: %s', await AicactusSDK.getAnonymousId())
 }
 
 const buildId = 'CIRCLE_WORKFLOW_ID'
 
 const testSuite = () =>
   calls.forEach(([call, name, props = {}]) =>
-    analytics[call](name, {
+  AicactusSDK[call](name, {
       ...props,
       buildId
     })
@@ -88,7 +88,7 @@ const styles = StyleSheet.create({
 
 import integrations from './integrations.gen'
 
-analytics
+AicactusSDK
     .setup('AICACTUS_WRITE_TOKEN', {
       debug: true,
       using: integrations

@@ -57,7 +57,7 @@ export default integrations
 			ios,
 			android,
 			npm: {
-				package: `@aicactus/analytics-react-native-${slug(
+				package: `@aicactus/aicactus-react-native-${slug(
 					'-'
 				).toLowerCase()}${suffix}`
 			}
